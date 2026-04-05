@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #080810;
+  --color-secondary: #a78bfa;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080810;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* ================================================
+   CRITICAL — Kill ALL old section show/hide logic
+   ================================================ */
+
+section,
+header,
+.section,
+.sec1,
+.sec2,
+.sec3,
+.sec5 {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  pointer-events: all !important;
+  animation: none !important;
+  min-height: unset !important;
+  padding: 0 !important;
+}
+
+/* Kill the scaleAnim that flashes sections */
+@keyframes scaleAnim {
+  0%,
+  100% {
+    transform: none;
+  }
+}
+
+/* Kill old .section.active animation too */
+.section.active {
+  display: block !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+/* Kill old controlls & theme-btn from old CSS */
+.controlls,
+.theme-btn {
+  display: none !important;
+}
+
+/* ================================================
+   SCROLLBAR
+   ================================================ */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #080810;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(167, 139, 250, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(167, 139, 250, 0.6);
+}
+
+/* ================================================
+   SELECTION COLOR
+   ================================================ */
+::selection {
+  background: rgba(167, 139, 250, 0.3);
+  color: #fff;
+}
+
+/* ================================================
+   SMOOTH ANCHOR SCROLL OFFSET
+   ================================================ */
+#home,
+#about,
+#portfolio,
+#contact {
+  scroll-margin-top: 0px;
+}
