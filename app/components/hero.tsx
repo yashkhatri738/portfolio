@@ -206,13 +206,6 @@ export default function HeroSection({ activeSection }: { activeSection?: string 
             transform: mounted ? "translateX(0)" : "translateX(-40px)",
             transition: "all 0.9s ease 0.2s",
           }}>
-            <div style={{
-              display: "inline-flex", alignItems: "center", gap: "6px",
-              padding: "5px 12px", border: "1px solid rgba(232,255,71,0.2)",
-              borderRadius: "40px", background: "rgba(232,255,71,0.06)", marginBottom: "16px",
-            }}>
-              <span style={{ fontSize: "11px", color: "#e8ff47", fontFamily: "'Outfit'", letterSpacing: "0.1em", textTransform: "uppercase" }}>Portfolio 2025</span>
-            </div>
             <h1 style={{
               fontFamily: "'Syne', sans-serif", fontWeight: 800,
               fontSize: "clamp(2rem, 4vw, 3.2rem)", lineHeight: 1.05,
