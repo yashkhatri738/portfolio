@@ -3,6 +3,18 @@ import { useEffect, useRef, useState } from "react";
 const projects = [
   {
     id: 1,
+    title: "Job Portal",
+    tech: "Next.js",
+    tag: "React",
+    img: "/Job.png",
+    github: "https://github.com/yashkhatri738/hire-seek-pulse",
+    live: "https://hire-seek-pulse.vercel.app/",
+    color: "#3b82f6",
+    desc: "Full-stack job portal with auth, job listings, and applications.",
+    year: "2025",
+  },
+  {
+    id: 2,
     title: "Crypto Clone",
     tech: "React.js",
     tag: "React",
@@ -14,7 +26,7 @@ const projects = [
     year: "2024",
   },
   {
-    id: 2,
+    id: 3,
     title: "YouTube Clone",
     tech: "React.js",
     tag: "React",
@@ -26,7 +38,7 @@ const projects = [
     year: "2024",
   },
   {
-    id: 3,
+    id: 4,
     title: "E-Commerce Store",
     tech: "React.js",
     tag: "React",
@@ -38,7 +50,7 @@ const projects = [
     year: "2024",
   },
   {
-    id: 4,
+    id: 5,
     title: "ColorGenretor",
     tech: "CSS / JS",
     tag: "CSS",
@@ -50,7 +62,7 @@ const projects = [
     year: "2023",
   },
   {
-    id: 5,
+    id: 6,
     title: "Food Web",
     tech: "HTML / CSS",
     tag: "HTML",
@@ -62,7 +74,7 @@ const projects = [
     year: "2023",
   },
   {
-    id: 6,
+    id: 7,
     title: "Netflix Clone",
     tech: "React.js",
     tag: "React",

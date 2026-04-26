@@ -60,6 +60,8 @@
 //   );
 // }
 
+
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -86,7 +88,7 @@ export default function Home() {
       {
         threshold: 0.3,
         rootMargin: "0px 0px -20% 0px",
-      },
+      }
     );
 
     sections.forEach((id) => {
